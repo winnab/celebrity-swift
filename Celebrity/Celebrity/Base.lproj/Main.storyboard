@@ -15,10 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpr-ka-fS0">
+                                <rect key="frame" x="0.0" y="20" width="600" height="290"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <state key="normal" title="Me">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUH-Iv-Q6g">
+                                <rect key="frame" x="0.0" y="310" width="600" height="290"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <state key="normal" title="You">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yUH-Iv-Q6g" firstAttribute="height" secondItem="Lpr-ka-fS0" secondAttribute="height" id="17b-nZ-g25"/>
+                            <constraint firstItem="yUH-Iv-Q6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8fh-um-20a"/>
+                            <constraint firstAttribute="trailing" secondItem="Lpr-ka-fS0" secondAttribute="trailing" id="DcG-Ia-GJO"/>
+                            <constraint firstAttribute="trailing" secondItem="yUH-Iv-Q6g" secondAttribute="trailing" id="SWr-Gi-2Cf"/>
+                            <constraint firstItem="Lpr-ka-fS0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aPf-6K-VQ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yUH-Iv-Q6g" secondAttribute="bottom" id="bPO-AM-Jqs"/>
+                            <constraint firstItem="yUH-Iv-Q6g" firstAttribute="top" secondItem="Lpr-ka-fS0" secondAttribute="bottom" id="rLg-7I-PFV"/>
+                            <constraint firstItem="Lpr-ka-fS0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tdj-na-B6E"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="meButton" destination="Lpr-ka-fS0" id="abU-jl-3Py"/>
+                        <outlet property="youButton" destination="yUH-Iv-Q6g" id="1wc-sF-Fy4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
